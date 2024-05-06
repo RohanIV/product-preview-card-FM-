@@ -1,0 +1,108 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+}
+
+.card-container{
+    width: 90%;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 45px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+
+}
+.card-content{
+    margin: 20px;
+}
+.mobile-img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.desk-img{
+    display: none;
+}
+p{
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+}
+header > p{
+    letter-spacing: 5px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+h1{
+    font-family: Fraunces;
+    font-size: 2rem;
+}
+
+.desc{
+    line-height: 25px;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.price-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+ 
+}
+.price-1{
+    font-family: Fraunces;
+    font-size: 2rem;
+    margin-right: 20px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    margin: 0px 20px 0 0;
+
+}
+.price-2{
+    margin: 10px 0;
+    text-decoration: line-through;
+}
+
+.cart{
+    margin-right: 10px;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    border:none;
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(158, 36%, 40%);
+}
+
+@media screen and (min-width: 670px){
+    .card-container{
+        width: 610px;
+        display: flex;
+        height: 500px;
+        border-radius: 20px;
+        margin-top: 160px;
+    }
+    .image-container{
+        height: 102%;
+        width: 200%;
+    }
+    .mobile-img{
+        display: none;
+    }    
+    .desk-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+}
